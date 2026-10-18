@@ -4,46 +4,62 @@ const KATEGORI = ["Kuliner Legendaris", "Makanan Pedas", "Kafe Lokal", "Kaki Lim
 /* Kolom opsional tiap tempat: video (link TikTok lengkap), fasilitas, jalanBagus, akses ("mobil" / "motor"),
    status ("auto" = ikut jam buka, "tutup" = tutup sementara, "buka" = paksa buka) + tutupSampai ("2026-10-20"). */
 const TEMPAT = [
-  { id: "t1", gambartoko: "images/baksoPakDarmo.jpg", nama: "Bakso Pak Darmo", kategori: "Kuliner Legendaris", kecamatan: "Metro Pusat",
+  {
+    id: "t1", gambartoko: "images/baksoPakDarmo.jpg", nama: "Bakso Pak Darmo", kategori: "Kuliner Legendaris", kecamatan: "Metro Pusat",
     alamat: "Jl. Sudirman No. 12, Metro Pusat", jam: "09.00–21.00", hargaMin: 12000, hargaMax: 25000,
     menu: ["Bakso urat", "Bakso tahu", "Es jeruk"], rating: 4.6, jumlah: 18, gofood: "https://gofood.co.id/",
     fasilitas: { qris: true, halal: true, wifi: true, kipas: true, ac: false, stopkontak: true, parkir: true },
-    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: "" },
-  { id: "t2", gambartoko: "images/imas.png", nama: "Seblak Teh Imas", kategori: "Makanan Pedas", kecamatan: "Metro Barat",
+    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: ""
+  },
+  {
+    id: "t2", gambartoko: "images/imas.png", nama: "Seblak Teh Imas", kategori: "Makanan Pedas", kecamatan: "Metro Barat",
     alamat: "Jl. Imam Bonjol, Metro Barat", jam: "14.00–22.00", hargaMin: 10000, hargaMax: 20000,
     menu: ["Seblak ceker", "Seblak seafood", "Cuanki"], rating: 4.4, jumlah: 31, gofood: "https://gofood.co.id/",
     fasilitas: { qris: true, halal: true, wifi: false, kipas: true, ac: false, stopkontak: false, parkir: true },
-    jalanBagus: false, akses: "motor", status: "auto", tutupSampai: "", video: "" },
-  { id: "t3", gambartoko: "images/kopiSudutTaman.jpg", nama: "Kopi Sudut Taman", kategori: "Kafe Lokal", kecamatan: "Metro Timur",
+    jalanBagus: false, akses: "motor", status: "auto", tutupSampai: "", video: ""
+  },
+  {
+    id: "t3", gambartoko: "images/kopiSudutTaman.jpg", nama: "Kopi Sudut Taman", kategori: "Kafe Lokal", kecamatan: "Metro Timur",
     alamat: "Jl. Ki Hajar Dewantara, Metro Timur", jam: "08.00–23.00", hargaMin: 15000, hargaMax: 35000,
     menu: ["Kopi susu gula aren", "Kopi Lampung V60", "Roti bakar"], rating: 4.7, jumlah: 42, gofood: "https://gofood.co.id/",
     fasilitas: { qris: true, halal: true, wifi: true, kipas: true, ac: true, stopkontak: true, parkir: true },
-    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: "" },
-  { id: "t4", gambartoko: "images/nasiUduk1.png", nama: "Nasi Uduk Bu Sari", kategori: "Kaki Lima", kecamatan: "Metro Utara",
+    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: ""
+  },
+  {
+    id: "t4", gambartoko: "images/nasiUduk1.png", nama: "Nasi Uduk Bu Sari", kategori: "Kaki Lima", kecamatan: "Metro Utara",
     alamat: "Depan pasar, Metro Utara", jam: "05.30–10.00", hargaMin: 8000, hargaMax: 15000,
     menu: ["Nasi uduk telur", "Bakwan", "Teh manis"], rating: 4.3, jumlah: 12, gofood: "https://gofood.co.id/",
     fasilitas: { qris: false, halal: true, wifi: false, kipas: false, ac: false, stopkontak: false, parkir: false },
-    jalanBagus: false, akses: "motor", status: "auto", tutupSampai: "", video: "" },
-  { id: "t5", gambartoko: "images/keripikPisang.jpg", nama: "Keripik Pisang Mak Yah", kategori: "Oleh-oleh", kecamatan: "Metro Selatan",
+    jalanBagus: false, akses: "motor", status: "auto", tutupSampai: "", video: ""
+  },
+  {
+    id: "t5", gambartoko: "images/keripikPisang.jpg", nama: "Keripik Pisang Mak Yah", kategori: "Oleh-oleh", kecamatan: "Metro Selatan",
     alamat: "Jl. Pattimura, Metro Selatan", jam: "08.00–17.00", hargaMin: 15000, hargaMax: 60000,
     menu: ["Keripik pisang coklat", "Keripik pisang asin", "Kopi bubuk"], rating: 4.8, jumlah: 25, gofood: "https://gofood.co.id/",
     fasilitas: { qris: true, halal: true, wifi: false, kipas: true, ac: false, stopkontak: true, parkir: true },
-    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: "" },
-  { id: "t6", gambartoko: "images/ayamGeprek.png", nama: "Mie Ayam Geprek Joss", kategori: "Makanan Pedas", kecamatan: "Metro Pusat",
+    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: ""
+  },
+  {
+    id: "t6", gambartoko: "images/ayamGeprek.png", nama: "Mie Ayam Geprek Joss", kategori: "Makanan Pedas", kecamatan: "Metro Pusat",
     alamat: "Jl. Hasanudin, Metro Pusat", jam: "10.00–21.00", hargaMin: 13000, hargaMax: 22000,
     menu: ["Ayam geprek level 1–5", "Mie ayam pedas"], rating: 4.2, jumlah: 20, gofood: "https://gofood.co.id/",
     fasilitas: { qris: true, halal: true, wifi: true, kipas: true, ac: true, stopkontak: true, parkir: false },
-    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: "" },
-  { id: "t7", gambartoko: "images/sotoBetawi.jpg", nama: "Soto Betawi Haji Ujang", kategori: "Kuliner Legendaris", kecamatan: "Metro Barat",
+    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: ""
+  },
+  {
+    id: "t7", gambartoko: "images/sotoBetawi.jpg", nama: "Soto Betawi Haji Ujang", kategori: "Kuliner Legendaris", kecamatan: "Metro Barat",
     alamat: "Jl. Veteran, Metro Barat", jam: "07.00–15.00", hargaMin: 18000, hargaMax: 30000,
     menu: ["Soto daging", "Soto babat", "Emping"], rating: 4.5, jumlah: 16, gofood: "https://gofood.co.id/",
     fasilitas: { qris: false, halal: true, wifi: false, kipas: true, ac: false, stopkontak: false, parkir: true },
-    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: "" },
-  { id: "t8", gambartoko: "images/esKelapa.png", nama: "Es Kelapa Muda Bang Ron", kategori: "Kaki Lima", kecamatan: "Metro Timur",
+    jalanBagus: true, akses: "mobil", status: "auto", tutupSampai: "", video: ""
+  },
+  {
+    id: "t8", gambartoko: "images/esKelapa.png", nama: "Es Kelapa Muda Bang Ron", kategori: "Kaki Lima", kecamatan: "Metro Timur",
     alamat: "Pinggir lapangan, Metro Timur", jam: "10.00–18.00", hargaMin: 7000, hargaMax: 12000,
     menu: ["Es kelapa muda", "Es cincau"], rating: 4.1, jumlah: 9, gofood: "https://gofood.co.id/",
     fasilitas: { qris: false, halal: true, wifi: false, kipas: false, ac: false, stopkontak: false, parkir: true },
-    jalanBagus: false, akses: "motor", status: "auto", tutupSampai: "", video: "" }
+    jalanBagus: false, akses: "motor", status: "auto", tutupSampai: "", video: ""
+  }
 ];
 
 /* ===== STATE & UTIL ===== */
@@ -83,8 +99,8 @@ function lencanaBuka(t) {
 /* 🛣️ jalan bagus (hanya muncul bila bagus) + 🚗 mobil bisa / 🏍️ khusus motor */
 function aksesHtml(t) {
   const a = [];
-  if (t.jalanBagus) a.push(`<span role="img" title="Jalan menuju kedai mayoritas bagus" aria-label="Jalan menuju kedai mayoritas bagus"><img src="images/mobil.png" class="i_jalan" alt=""></span>`);
-  if (t.akses === "mobil") a.push(`<span  class="penglurus" role="img" title="Mobil bisa masuk" aria-label="Mobil bisa masuk"><img src="images/jalan.png" class="i_jalan" alt=""></span>`);
+  if (t.jalanBagus) a.push(`<span role="img" title="Jalan menuju kedai mayoritas bagus" aria-label="Jalan menuju kedai mayoritas bagus"><img src="images/jalan.png" class="i_jalan" alt=""></span>`);
+  if (t.akses === "mobil") a.push(`<span role="img" title="Mobil bisa masuk" aria-label="Mobil bisa masuk"><img src="images/mobil.png" class="i_jalan" alt=""></span>`);
   else if (t.akses === "motor") a.push(`<span role="img" title="Khusus motor" aria-label="Khusus motor"><img src="images/motor.png" class="i_jalan" alt=""></span>`);
   return a.length ? `<span class="akses">${a.join("")}</span>` : "";
 }
@@ -148,8 +164,8 @@ function render() {
   const urut = $("sort").value;
   hasil.sort((a, b) =>
     urut === "murah" ? a.hargaMin - b.hargaMin :
-    urut === "nama" ? a.nama.localeCompare(b.nama) :
-    statistik(b).rating - statistik(a).rating);
+      urut === "nama" ? a.nama.localeCompare(b.nama) :
+        statistik(b).rating - statistik(a).rating);
 
   $("count").textContent = `${hasil.length} tempat ditemukan`;
   $("grid").innerHTML = hasil.length ? hasil.map(kartuHtml).join("") : `<p class="empty">Belum ada yang cocok. Coba kata kunci lain atau pilih “Semua” kategori.</p>`;
@@ -157,6 +173,17 @@ function render() {
 
 
 /* ===== DETAIL & ULASAN ===== */
+function aksesDetailHtml(t) {
+  const baris = [];
+  if (t.jalanBagus) baris.push(["jalan.png", "Jalan menuju kedai mayoritas bagus"]);
+  if (t.akses === "mobil") baris.push(["mobil.png", "Mobil bisa masuk"]);
+  else if (t.akses === "motor") baris.push(["motor.png", "Khusus motor"]);
+  return baris.length
+    ? `<ul class="akses-detail">${baris.map(([img, teks]) =>
+        `<li><img src="images/${img}" alt=""><span>${teks}</span></li>`).join("")}</ul>`
+    : "";
+}
+
 function bukaDetail(id) {
   const t = TEMPAT.find(x => x.id === id);
   if (!t) return;
@@ -169,7 +196,7 @@ function bukaDetail(id) {
     <h2 id="d-nama">${esc(t.nama)}</h2>
     <p class="rate">★ ${s.rating.toFixed(1)} <small>dari ${s.jumlah} penilaian</small></p>
     ${fasilitasHtml(t)}
-    ${t.akses || t.jalanBagus ? `<p class="meta akses-teks">${t.jalanBagus ? "<div class='meta_parent'><img src='images/jalan.png' class='meta_jalan'> <p>  Mayoritas jalan bagus</p> </div>" : ""}${t.jalanBagus && t.akses ? "" : ""}${t.akses === "mobil" ? "<div class='meta_parent'><img src='images/mobil.png' class='meta_jalan'> <p> Mobil bisa masuk</p> </div>" : t.akses === "motor" ? "<div class='meta_parent'><img src='images/motor.png' class='meta_jalan'> <p>Khusus motor</p> </div>" : ""}</p>` : ""}
+    ${aksesDetailHtml(t)}
     <dl>
       <dt>Alamat</dt><dd>${esc(t.alamat)}</dd>
       <dt>Jam buka</dt><dd>${t.jam}</dd>

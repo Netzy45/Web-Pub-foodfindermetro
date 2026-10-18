@@ -100,11 +100,9 @@ h3{font:800 1.15rem var(--f-head);margin:28px 0 10px}
 #r-teks::placeholder { color: #8A7A55; }   /* warna tulisan "Nama (boleh kosong)" */
 #r-teks:focus { border-color: var(--kunyit); }  /* warna garis saat diketuk */
 
-.i_jalan {width: 21px;}
-.meta_jalan {width: 21px;}
-.meta_parent{display: inline;}
-.penglurus{display: flex;}
-.meta_parent p{margin: 0px 0px;margin-left: 4px;display: inline;}
+/* .inline_parent{display: flex;} */
+.baris-ya{display: flex;justify-content: center;}
+.baris-ya span img{width: 21px;}
 
 @media (max-width:640px){
   .filters{grid-template-columns:1fr}dl{grid-template-columns:1fr;gap:0}dt{margin-top:8px}

@@ -42,7 +42,7 @@
 .pform label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
 .pform select{color:#1B1F1C}
 #pl-hasil{padding-bottom:0}
-#pl-hasil .card img{aspect-ratio:4/3;object-fit:cover;border-radius:10px;width:100%}
+#pl-hasil .card > img{aspect-ratio:4/3;object-fit:cover;border-radius:10px;width:100%}
 #pl-hasil .card{color:var(--ink)}
 #pl-hasil .card .meta{color:var(--muted)}
 
@@ -105,7 +105,14 @@ body:has(dialog[open]){overflow:hidden}
 .baris-ya>span{flex:1 1 150px}
 .pilih{display:inline-flex!important;align-items:center;gap:6px;font-weight:500!important;cursor:pointer;padding:4px 0}
 .pilih input{width:1.15rem;height:1.15rem;accent-color:#17402E;margin:0}
+img.i_jalan, .i_jalan { width: 21px; height: auto; flex: none; }
 
 /* Hover kuning hanya untuk perangkat dengan mouse (di HP hover suka "menempel") */
 
 @media (hover:hover){.menu-like:not([aria-pressed="true"]):hover{border-color:var(--kunyit)}}
+
+.card > img{aspect-ratio:4/3;object-fit:cover;border-radius:10px;width:100%}
+
+.akses-detail{list-style:none;margin:10px 0 0;padding:0;display:grid;gap:6px;color:var(--muted);font-size:.92rem}
+.akses-detail li{display:flex;align-items:center;gap:8px}
+.akses-detail img{width:21px;height:21px;object-fit:contain;flex:none}
